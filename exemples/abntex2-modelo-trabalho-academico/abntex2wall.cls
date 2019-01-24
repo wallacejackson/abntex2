@@ -1133,8 +1133,41 @@
 % ---
 
 % ---
-% Impressão da Capa
+% Tradução de comandos
 \newcommand{\capitulo}[1]{%
 	\chapter{#1}
+}
+\newcommand{\parte}[1]{%
+	\part{#1}
+}
+\newcommand{\secao}[1]{%
+	\section{#1}
+}
+\newcommand{\subsecao}[1]{%
+	\subsection{#1}
+}
+\newcommand{\subsubsecao}[1]{%
+	\subsubsection{#1}
+}
+\newcommand{\subsubsubsecao}[1]{%
+	\subsubsubsection{#1}
+}
+\newcommand{\negrito}[1]{%
+	\textbf{#1}
+}
+\newcommand{\italico}[1]{%
+	\textit{#1}
+}
+\newcommand{\sublinhado}[1]{%
+	\underline{#1}
+}
+\newcommand{\rodape}[1]{%
+	\footnote{#1}
+}
+\newcommand{\referenciaonline}[1]{%
+	\citeonline{#1}
+}
+\newcommand{\referencia}[1]{%
+	\cite{#1}
 }
 % ---
