@@ -1131,3 +1131,10 @@
 }
 \makeatother
 % ---
+
+% ---
+% Impressão da Capa
+\newcommand{\capitulo}[1]{%
+	\chapter{#1}
+}
+% ---
