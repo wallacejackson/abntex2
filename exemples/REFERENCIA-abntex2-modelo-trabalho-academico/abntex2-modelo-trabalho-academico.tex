@@ -78,6 +78,11 @@
 % ---
 % Define se trabalho irá exibir partes opicionais
 \newboolean{elementosOpicionais}
+% ---
+% Define se existencia de listas
+\newboolean{existeIlustracoes}
+\newboolean{existeQuadros}
+\newboolean{existeTabelas}
 
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
@@ -99,6 +104,9 @@
 \preambulo{Modelo canônico de trabalho monográfico acadêmico em conformidade com
 as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 \setboolean{elementosOpicionais}{false} %true ou false
+\setboolean{existeIlustracoes}{true} %true ou false
+\setboolean{existeQuadros}{true} %true ou false
+\setboolean{existeTabelas}{true} %true ou false
 
 % ---
 % Configurações de aparência do PDF final
@@ -158,10 +166,10 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % --- 
 
 % O tamanho do parágrafo é dado por:
-\setlength{\parindent}{0cm} %Default era 1.3
+\setlength{\parindent}{0cm} %Default 1.3
 
 % Controle do espaçamento entre um parágrafo e outro:
-\setlength{\parskip}{0.6cm}  % tente também \onelineskip Default era 0.2
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip %Defalt 0.2
 
 % ---
 % compila o indice
@@ -199,6 +207,15 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 \imprimirfolhaderosto*
 % ---
 
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.5cm}  % tente também \onelineskip %Defalt 0.2
+
+\ifthenelse{\boolean{elementosOpicionais}}{
+
 % ---
 % Inserir a ficha bibliografica
 % ---
@@ -213,8 +230,6 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % \begin{fichacatalografica}
 %     \includepdf{fig_ficha_catalografica.pdf}
 % \end{fichacatalografica}
-
-\ifthenelse{\boolean{elementosOpicionais}}{
 \begin{fichacatalografica}
 	\sffamily
 	\vspace*{\fill}					% Posição vertical
@@ -418,7 +433,7 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 %Parte opcional ocultada
 }
 
-
+\ifthenelse{\boolean{existeIlustracoes}}{
 % ---
 % inserir lista de ilustrações
 % ---
@@ -426,15 +441,23 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 \listoffigures*
 \cleardoublepage
 % ---
+}{
+%Lista de ilustraçõs não exibida
+}
 
+\ifthenelse{\boolean{existeQuadros}}{
 % ---
 % inserir lista de quadros
 % ---
-\pdfbookmark[0]{\listofquadrosname}{loq}
-\listofquadros*
+\pdfbookmark[0]{\listofquadrosname*}{loq}
+\listofquadros
 \cleardoublepage
 % ---
+}{
+%Lista de quadros não exibida
+}
 
+\ifthenelse{\boolean{existeTabelas}}{
 % ---
 % inserir lista de tabelas
 % ---
@@ -442,6 +465,9 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 \listoftables*
 \cleardoublepage
 % ---
+}{
+%Parte tabelas não exibida
+}
 
 \ifthenelse{\boolean{elementosOpicionais}}{
 % ---

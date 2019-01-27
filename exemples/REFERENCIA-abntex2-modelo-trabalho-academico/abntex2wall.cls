@@ -1,22 +1,3 @@
-%% abntex2.cls, v<VERSION> laurocesar
-%% Copyright 2012-<COPYRIGHT_YEAR> by abnTeX2 group at https://www.abntex.net.br/ 
-%%
-%% This work may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%   http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2005/12/01 or later.
-%%
-%% This work has the LPPL maintenance status `maintained'.
-%% 
-%% The Current Maintainer of this work is the abnTeX2 team, led
-%% by Lauro César Araujo. Further information are available on 
-%% https://www.abntex.net.br/
-%%
-%% This work consists of the file abntex2.cls.
-
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % Declaracao da classe abntex2 como uma extensao da classe memoir
@@ -25,6 +6,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{abntex2}[<CURRENT_DATE> v<VERSION> abnTeX2]
 \RequirePackage{ifthen}
+\RequirePackage{etoolbox}%\ifdefempty{def}{true}{false}
 %
 % Captura as options article e twocolumn
 %
@@ -695,7 +677,7 @@
 \providecommand{\imprimirsubtitulo}{}
 \newcommand{\subtitulo}[1]{\renewcommand{\imprimirsubtitulo}{#1}}
 \newcommand{\imprimirtitulo}{
-	\textbf{\thetitle}: \imprimirsubtitulo
+	\textbf{\thetitle}\if\imprimirsubtitulo\empty \else \textbf{:} \imprimirsubtitulo\fi
 }
 
 % Comandos de dados - titulo do documento
@@ -1097,16 +1079,16 @@
     %{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
 
     \abntex@ifnotempty{\imprimirorientador}{%
-    	{\large\imprimirorientadorRotulo~\imprimirorientador\par}%
+    	{\imprimirorientadorRotulo~\imprimirorientador\par}%
 	}%
     \abntex@ifnotempty{\imprimircoorientador}{%
-       {\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+       {\imprimircoorientadorRotulo~\imprimircoorientador}%
     }%
     \vspace*{\fill}
 
-    {\large\imprimirlocal}
+    {\imprimirlocal}
     \par
-    {\large\imprimirdata}
+    {\imprimirdata}
     \vspace*{1cm}
 
   \end{center}
