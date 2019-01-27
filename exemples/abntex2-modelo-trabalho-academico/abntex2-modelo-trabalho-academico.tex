@@ -54,6 +54,17 @@
 % ---
 \usepackage[a4paper,left=3cm,right=2cm,top=3cm,bottom=2cm]{geometry}
 
+% ---
+% Pacote de fonte
+% ---
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---
+% Pacote de formatação da bibliografia
+% ---
+\usepackage{natbib}
+
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
@@ -520,6 +531,7 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
+\setlength{\bibsep}{1cm}
 \bibliography{abntex2-modelo-references}
 
 \ifthenelse{\boolean{elementosOpicionais}}{

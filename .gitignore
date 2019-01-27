@@ -27,6 +27,7 @@
 *.fdb_latexmk
 *.synctex.gz
 *.lof
+*.~lock*
 doc/latex/abntex2/abntex2abrev.sty
 doc/latex/abntex2/abntex2-options.bib
 doc/latex/abntex2/abntex2.cls
