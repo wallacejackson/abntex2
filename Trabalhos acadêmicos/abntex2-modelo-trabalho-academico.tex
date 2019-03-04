@@ -53,6 +53,11 @@
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 
+% ---
+% Pacotes extras
+% ---
+\usepackage{setspace}
+
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
@@ -161,7 +166,7 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % --- 
 
 % O tamanho do parágrafo é dado por:
-\setlength{\parindent}{1.3cm}
+\setlength{\parindent}{0cm} % Default 1.3
 
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
@@ -187,12 +192,15 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
 % ----------------------------------------------------------
+\SingleSpacing
 \include{abntex2-elementos-pre-textuais}
 % ---
 
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
+\OnehalfSpacing
+\setlength{\parskip}{\onelineskip}  % tente também \onelineskip
 \include{abntex2-elementos-textuais}
 % ---
 
