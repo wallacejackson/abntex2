@@ -1,0 +1,52 @@
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{13}{chapter.1}% 
+\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Prepara\IeC {\c c}\IeC {\~a}o da pesquisa}}{15}{part.1}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Resultados de comandos}}{17}{chapter.2}% 
+\precistoctext {Isto \IeC {\'e} uma sinopse de cap\IeC {\'\i }tulo. A ABNT n\IeC {\~a}o traz nenhuma normatiza\IeC {\c c}\IeC {\~a}o a respeito desse tipo de resumo, que \IeC {\'e} mais comum em romances e livros t\IeC {\'e}cnicos.}
+\contentsline {section}{\numberline {2.1}Codifica\IeC {\c c}\IeC {\~a}o dos arquivos: UTF8}{17}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Cita\IeC {\c c}\IeC {\~o}es diretas}{17}{section.2.2}% 
+\babel@toc {english}{}
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {2.3}Notas de rodap\IeC {\'e}}{18}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Tabelas}{18}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Figuras}{19}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Figuras em \emph {minipages}}{19}{subsection.2.5.1}% 
+\contentsline {section}{\numberline {2.6}Express\IeC {\~o}es matem\IeC {\'a}ticas}{20}{section.2.6}% 
+\contentsline {section}{\numberline {2.7}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{21}{section.2.7}% 
+\contentsline {section}{\numberline {2.8}Espa\IeC {\c c}amento entre par\IeC {\'a}grafos e linhas}{22}{section.2.8}% 
+\contentsline {section}{\numberline {2.9}Inclus\IeC {\~a}o de outros arquivos}{23}{section.2.9}% 
+\contentsline {section}{\numberline {2.10}Compilar o documento \LaTeX }{23}{section.2.10}% 
+\contentsline {section}{\numberline {2.11}Remiss\IeC {\~o}es internas}{23}{section.2.11}% 
+\contentsline {section}{\numberline {2.12}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{24}{section.2.12}% 
+\contentsline {subsection}{\numberline {2.12.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{24}{subsection.2.12.1}% 
+\contentsline {subsubsection}{\numberline {2.12.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{24}{subsubsection.2.12.1.1}% 
+\contentsline {subsubsection}{\numberline {2.12.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{24}{subsubsection.2.12.1.2}% 
+\contentsline {subsection}{\numberline {2.12.2}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{24}{subsection.2.12.2}% 
+\contentsline {subsubsection}{\numberline {2.12.2.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{24}{subsubsection.2.12.2.1}% 
+\contentsline {paragraph}{\numberline {2.12.2.1.1}Esta \IeC {\'e} uma subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{24}{paragraph.2.12.2.1.1}% 
+\contentsline {paragraph}{\numberline {2.12.2.1.2}Esta \IeC {\'e} outra subse\IeC {\c c}\IeC {\~a}o de quinto n\IeC {\'\i }vel}{25}{paragraph.2.12.2.1.2}% 
+\contentsline {paragraph}{\numberline {2.12.2.1.3}Este \IeC {\'e} um par\IeC {\'a}grafo numerado}{25}{paragraph.2.12.2.1.3}% 
+\contentsline {paragraph}{\numberline {2.12.2.1.4}Esta \IeC {\'e} outro par\IeC {\'a}grafo numerado}{25}{paragraph.2.12.2.1.4}% 
+\contentsline {section}{\numberline {2.13}Este \IeC {\'e} um exemplo de nome de se\IeC {\c c}\IeC {\~a}o longo. Ele deve estar alinhado \IeC {\`a} esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{25}{section.2.13}% 
+\contentsline {section}{\numberline {2.14}Diferentes idiomas e hifeniza\IeC {\c c}\IeC {\~o}es}{25}{section.2.14}% 
+\contentsline {section}{\numberline {2.15}Consulte o manual da classe \textsf {abntex2}}{27}{section.2.15}% 
+\contentsline {section}{\numberline {2.16}Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{27}{section.2.16}% 
+\contentsline {subsection}{\numberline {2.16.1}Acentua\IeC {\c c}\IeC {\~a}o de refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{27}{subsection.2.16.1}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Conte\IeC {\'u}dos espec\IeC {\'\i }ficos do modelo de trabalho acad\IeC {\^e}mico}}{29}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Quadros}{29}{section.3.1}% 
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o}}{31}{chapter.4}% 
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{33}{section*.9}% 
