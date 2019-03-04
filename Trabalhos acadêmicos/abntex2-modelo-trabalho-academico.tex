@@ -1,4 +1,4 @@
-%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+ %% This work consists of the files abntex2-modelo-trabalho-academico.tex,
 %% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
 %%
 
@@ -15,7 +15,7 @@
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
 	openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
-	twoside,			% para impressão em recto e verso. Oposto a oneside
+	oneside,			% para impressão em recto e verso. twoside é oposto a oneside
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
@@ -52,8 +52,6 @@
 % ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
-
-\usepackage{ifthen}
 
 % --- 
 % CONFIGURAÇÕES DE PACOTES
