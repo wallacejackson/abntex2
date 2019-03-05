@@ -151,8 +151,8 @@
 \newcommand{\coorientadorname}{Coorientador:}
 \newcommand{\folhadeaprovacaoname}{Folha de aprova\c{c}\~ao}
 \newcommand{\resumoname}{Resumo} 
-\newcommand{\listadesiglasname}{Lista de abreviaturas e siglas}
-\newcommand{\listadesimbolosname}{Lista de s\'imbolos}
+\newcommand{\listadesiglasname}{Lista de abreviaturas e siglas \newline}
+\newcommand{\listadesimbolosname}{Lista de s\'imbolos \newline}
 \newcommand{\fontename}{Fonte}
 \newcommand{\notaname}{Nota}
 %
@@ -160,14 +160,16 @@
   %% ajusta nomes padroes do babel
   \renewcommand{\bibname}{Refer\^encias}
   \renewcommand{\indexname}{\'Indice}
-  \renewcommand{\listfigurename}{Lista de ilustra\c{c}\~{o}es}
-  \renewcommand{\listtablename}{Lista de tabelas}
+  \renewcommand{\listfigurename}{Lista de ilustra\c{c}\~{o}es \newline}
+  \renewcommand{\listtablename}{Lista de tabelas \newline}
   %% ajusta nomes usados com a macro \autoref
   \renewcommand{\pageautorefname}{p\'agina}
   \renewcommand{\sectionautorefname}{se{\c c}\~ao}
   \renewcommand{\subsectionautorefname}{subse{\c c}\~ao}
   \renewcommand{\subsubsectionautorefname}{subse{\c c}\~ao}
   \renewcommand{\paragraphautorefname}{subse{\c c}\~ao}
+  \renewcommand{\contentsname}{Sum\'ario}%Default Não existia
+  \renewcommand{\listofquadrosname}{Lista de Quadros \newline}%Default Não existia
 }
 \addto\captionsenglish{% ingles
   %% adjusts names from abnTeX2
@@ -576,7 +578,9 @@
      \renewcommand{\chaptitlefont}{\ABNTEXsectionfont\ABNTEXsectionfontsize}
    }{%else
      \setlength{\beforechapskip}{0pt}
+     %Default: \renewcommand{\chaptitlefont}{\ABNTEXchapterfont\ABNTEXchapterfontsize}
      \renewcommand{\chaptitlefont}{\ABNTEXchapterfont\ABNTEXchapterfontsize}
+     \setlength{\afterchapskip}{0pt} % Default: Não existia
    }
   
   \renewcommand{\chapnumfont}{\chaptitlefont}
@@ -1037,19 +1041,28 @@
 \newcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-    \ABNTEXchapterfont\large\imprimirautor
+    \vfill
+      \ABNTEXchapterfont\large\imprimirinstituicao
+	\vfill    
+	
+    \vfill
+      \ABNTEXchapterfont\large\imprimirautor
+	\vfill
 
     \vfill
     \begin{center}
-    \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+      %\ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+      \imprimirtitulo
     \end{center}
     \vfill
     
+    \vfill
     \large\imprimirlocal
 
     \large\imprimirdata
+    \vfill
     
-    \vspace*{1cm}
+    \vspace*{0cm}% Default 1cm
   \end{capa}
 }
 % ---
@@ -1075,7 +1088,8 @@
 	
     \vspace*{\fill}\vspace*{\fill}
     \begin{center}
-      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+      \ABNTEXchapterfont\Large\imprimirtitulo
+      %default: \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
     \end{center}
     \vspace*{\fill}
 	
@@ -1088,7 +1102,7 @@
        \vspace*{\fill}
     }%
 
-    {\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+    %{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
 
 	\abntex@ifnotempty{\imprimirorientador}{%
        {\large\imprimirorientadorRotulo~\imprimirorientador\par}
